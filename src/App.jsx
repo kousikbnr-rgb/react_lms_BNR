@@ -3,9 +3,9 @@ import Register from "./pages/Register";
 import Login from "./pages/Login"
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile"
-// import Course from "./pages/Course"
-// import MCQ from "./pages/MCQ";
-//hello update
+import Course from "./pages/Course"
+import MCQ from "./pages/MCQ";
+
 
 
 function App() {
