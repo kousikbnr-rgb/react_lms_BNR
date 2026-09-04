@@ -1,0 +1,316 @@
+/* =========================================================
+   BR ACADEMY - THEME
+   ========================================================= */
+
+/* =========================================================
+   DARK THEME - MAIN
+   ========================================================= */
+
+body[data-theme-version="dark"] {
+    background: #202020;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+body[data-theme-version="dark"] .dashboard-wrapper {
+    --page-bg: #202020;
+    --card-bg: #272738;
+    --text: #ffffff;
+    --muted: #aaaaaa;
+
+    background: #202020;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+body[data-theme-version="dark"] .content-body {
+    background: #202020;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+body[data-theme-version="dark"] .dashboard-wrapper .header,
+body[data-theme-version="dark"] .dashboard-wrapper .header-content {
+    background: #272738 !important;
+    border-color: #383849;
+}
+
+body[data-theme-version="dark"] .dashboard-wrapper .dashboard_bar {
+    color: #ffffff;
+}
+
+
+/* Header buttons */
+
+body[data-theme-version="dark"] .dashboard-wrapper .header-right .nav-link {
+    background: transparent;
+    color: #b8b8c5;
+}
+
+body[data-theme-version="dark"] .dashboard-wrapper .header-right .nav-link:hover {
+    background: #333344;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+body[data-theme-version="dark"] .dashboard-wrapper .dlabnav,
+body[data-theme-version="dark"] .dashboard-wrapper .nav-header {
+    background: #202020;
+}
+
+
+/* =========================================================
+   DASHBOARD CARDS
+   ========================================================= */
+
+body[data-theme-version="dark"] .dashboard-wrapper .card {
+    background: #272738;
+    color: #ffffff;
+}
+
+body[data-theme-version="dark"] .dashboard-wrapper .card-header {
+    background: #272738;
+    border-color: #383849;
+}
+
+body[data-theme-version="dark"] .dashboard-wrapper .card-title {
+    color: #ffffff;
+}
+
+
+/* Dashboard text */
+
+body[data-theme-version="dark"] .dashboard-wrapper .content-body h6,
+body[data-theme-version="dark"] .dashboard-wrapper .content-body
+    > .container-fluid
+    > .row:nth-child(2)
+    .card-body
+    > div:last-child
+    h2,
+body[data-theme-version="dark"] .dashboard-wrapper .content-body
+    > .container-fluid
+    > .row:nth-child(2)
+    .card-body
+    > div:last-child
+    h5 {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DASHBOARD INNER BOXES
+   ========================================================= */
+
+body[data-theme-version="dark"] .dashboard-wrapper .border {
+    border-color: #3b3b4c !important;
+}
+
+body[data-theme-version="dark"] .dashboard-wrapper .border.rounded {
+    background: #272738;
+}
+
+body[data-theme-version="dark"] .dashboard-wrapper .border.rounded h5 {
+    color: #ffffff;
+}
+
+body[data-theme-version="dark"] .dashboard-wrapper .border.rounded p {
+    color: #aaaaaa;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+body[data-theme-version="dark"] .dashboard-wrapper .table th,
+body[data-theme-version="dark"] .dashboard-wrapper .table td {
+    border-color: #3b3b4c;
+    color: #aaaaaa;
+}
+
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+body[data-theme-version="dark"] .dashboard-wrapper .progress,
+body[data-theme-version="dark"] .dashboard-wrapper .skill-progress,
+body[data-theme-version="dark"] .dashboard-wrapper .goal-progress,
+body[data-theme-version="dark"] .profile-progress {
+    background: #3a3a4a;
+}
+
+
+/* =========================================================
+   PROFILE PAGE
+   ========================================================= */
+
+body[data-theme-version="dark"] .profile-page {
+    color: #ffffff;
+}
+
+body[data-theme-version="dark"] .profile-card {
+    background: #272738;
+    border-color: #383849;
+}
+
+body[data-theme-version="dark"] .profile-card-header {
+    border-color: #383849;
+}
+
+body[data-theme-version="dark"] .profile-card-header h3,
+body[data-theme-version="dark"] .quick-profile-title,
+body[data-theme-version="dark"] .overview-number,
+body[data-theme-version="dark"] .activity-title,
+body[data-theme-version="dark"] .certificate-name {
+    color: #ffffff;
+}
+
+body[data-theme-version="dark"] .personal-label,
+body[data-theme-version="dark"] .personal-value,
+body[data-theme-version="dark"] .skill-name,
+body[data-theme-version="dark"] .skill-percent,
+body[data-theme-version="dark"] .goal-name,
+body[data-theme-version="dark"] .goal-percent,
+body[data-theme-version="dark"] .quick-profile-text,
+body[data-theme-version="dark"] .activity-time,
+body[data-theme-version="dark"] .certificate-status,
+body[data-theme-version="dark"] .overview-label {
+    color: #aaaaaa;
+}
+
+
+/* Profile boxes */
+
+body[data-theme-version="dark"] .overview-item,
+body[data-theme-version="dark"] .certificate-item {
+    border-color: #3b3b4c;
+}
+
+
+/* Today's goal */
+
+body[data-theme-version="dark"] .today-goal {
+    background: #302e4d;
+    border-color: #48456e;
+}
+
+
+/* =========================================================
+   COURSE PAGE
+   ========================================================= */
+
+body[data-theme-version="dark"] .course-welcome-title,
+body[data-theme-version="dark"] .course-card-title {
+    color: #ffffff;
+}
+
+body[data-theme-version="dark"] .course-welcome-text,
+body[data-theme-version="dark"] .course-card-description,
+body[data-theme-version="dark"] .course-card-detail {
+    color: #aaaaaa;
+}
+
+body[data-theme-version="dark"] .course-card {
+    background: #272738;
+    border-color: #383849;
+}
+
+
+/* =========================================================
+   MCQ PAGE
+   ========================================================= */
+
+body[data-theme-version="dark"] .mcq-card {
+    background: #272738;
+}
+
+body[data-theme-version="dark"] .mcq-header h2,
+body[data-theme-version="dark"] .mcq-top-row h5,
+body[data-theme-version="dark"] .mcq-question h4 {
+    color: #ffffff;
+}
+
+body[data-theme-version="dark"] .mcq-header p {
+    color: #aaaaaa;
+}
+
+body[data-theme-version="dark"] .mcq-option {
+    background: #202020;
+    border-color: #3b3b4c;
+}
+
+body[data-theme-version="dark"] .mcq-option label {
+    color: #ffffff;
+}
+
+body[data-theme-version="dark"] .mcq-option:hover {
+    background: #302e4d;
+}
+
+body[data-theme-version="dark"] .mcq-option-selected {
+    background: #302e4d;
+    border-color: #4d44b5;
+}
+
+body[data-theme-version="dark"] .mcq-progress {
+    background: #3a3a4a;
+}
+
+
+/* =========================================================
+   MOBILE PROFILE DROPDOWN
+   ========================================================= */
+
+body[data-theme-version="dark"] .mobile-features-menu {
+    background: #272738;
+    border-color: #383849;
+}
+
+body[data-theme-version="dark"] .mobile-features-menu button {
+    color: #ffffff;
+}
+
+body[data-theme-version="dark"] .mobile-features-menu button:hover {
+    background: #333344;
+}
+
+body[data-theme-version="dark"] .mobile-features-menu .material-icons {
+    color: #b8b8c5;
+}
+/* =========================================================
+   DARK THEME - MOBILE HAMBURGER
+   ========================================================= */
+
+body[data-theme-version="dark"] .mobile-menu-button {
+    color: #ffffff;
+}
+
+body[data-theme-version="dark"] .mobile-menu-button:hover {
+    background: #5d5d8f;
+    color: #c41212;
+}
+body[data-theme-version="dark"] .dashboard-wrapper .dz-fullscreen {
+    background: transparent;
+    color: #b8b8c5;
+}
+
+body[data-theme-version="dark"] .dashboard-wrapper .dz-fullscreen:hover {
+    background: #333344;
+    color: #ffffff;
+}

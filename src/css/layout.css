@@ -1,0 +1,208 @@
+/* =========================================================
+   COMMON LMS LAYOUT
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   MAIN WRAPPER
+   ========================================================= */
+
+.dashboard-wrapper {
+    --sidebar-width: 268px;
+    --header-height: 86px;
+
+    width: 100%;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background: #e9eef2;
+
+    font-family: "Poppins", Arial, sans-serif;
+    color: #2a3558;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   CONTENT AREA - DESKTOP
+   ========================================================= */
+
+.dashboard-wrapper .content-body {
+    width: calc(100% - var(--sidebar-width));
+
+    min-height: calc(100vh - var(--header-height));
+
+    margin-left: var(--sidebar-width);
+
+    padding-top: var(--header-height);
+
+    background: #e9eef2;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+   ========================================================= */
+
+.mobile-menu-button {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    margin: 0 12px 0 0;
+    padding: 0;
+
+    border: none;
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #2a3558;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.mobile-menu-button .material-icons {
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   SIDEBAR OVERLAY
+   ========================================================= */
+
+.sidebar-overlay {
+    display: none;
+}
+
+
+/* =========================================================
+   TABLET + MOBILE
+   991px and below
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .dashboard-wrapper {
+        --sidebar-width: 0px;
+    }
+
+
+    /* Content uses entire screen */
+
+    .dashboard-wrapper .content-body {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    /* Show hamburger */
+
+    .mobile-menu-button {
+        display: flex;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   575px and below
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .dashboard-wrapper {
+        --sidebar-width: 0px;
+    }
+
+
+    .dashboard-wrapper .content-body {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .mobile-menu-button {
+        display: flex;
+    }
+
+
+    /* Overlay appears only when sidebar is open */
+
+    .sidebar-overlay {
+        display: block;
+
+        position: fixed;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background: rgba(0, 0, 0, 0.35);
+
+        z-index: 1000;
+    }
+
+}
+@media (max-width: 575px) {
+
+    html body #root .dashboard-wrapper .content-body {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+}
+@media (max-width: 991px) {
+
+    html body #root .dashboard-wrapper .content-body {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+}
+@media (max-width: 575px) {
+
+    .sidebar-overlay {
+        display: block;
+
+        position: fixed;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background: rgba(0, 0, 0, 0.35);
+
+        z-index: 1000;
+    }
+
+}

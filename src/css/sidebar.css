@@ -1,0 +1,533 @@
+
+/* =========================================================
+   MAIN NAV HEADER / LOGO AREA
+   ========================================================= */
+
+.dashboard-wrapper .nav-header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: var(--sidebar-width);
+    height: var(--header-height);
+
+    background: var(--primary);
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    z-index: 1005;
+}
+
+
+/* Logo */
+
+.dashboard-wrapper .brand-logo {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+}
+
+.dashboard-wrapper .brand-logo:hover {
+    color: #ffffff;
+}
+
+
+/* B */
+
+.dashboard-wrapper .logo-abbr {
+    width: 52px !important;
+    height: 52px !important;
+
+    flex: 0 0 52px;
+
+    background: #675de0 !important;
+
+    border-radius: 8px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    color: #ffffff !important;
+
+    font-size: 30px !important;
+    font-weight: 700 !important;
+
+    font-family: Arial, sans-serif !important;
+}
+
+
+/* BR Academy */
+
+.dashboard-wrapper .brand-title {
+    margin-left: 10px !important;
+}
+
+.dashboard-wrapper .brand-title h2 {
+    margin: 0 !important;
+
+    color: #ffffff !important;
+
+    font-size: 28px !important;
+    font-weight: 700 !important;
+
+    white-space: nowrap;
+}
+
+
+/* Hide hamburger in desktop */
+
+.dashboard-wrapper .nav-control {
+    display: none;
+}
+
+.dashboard-wrapper .dlabnav {
+    position: fixed;
+
+    top: var(--header-height);
+    left: 0;
+    bottom: 0;
+
+    width: var(--sidebar-width);
+
+    background: var(--primary);
+
+    z-index: 1001;
+
+    overflow: hidden;
+}
+
+
+.dashboard-wrapper .dlabnav-scroll {
+    height: calc(100vh - var(--header-height));
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding-top: 28px;
+}
+
+
+.dashboard-wrapper .dlabnav-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.dashboard-wrapper .dlabnav-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.25);
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   SIDEBAR MENU
+   ========================================================= */
+
+.dashboard-wrapper .metismenu {
+    list-style: none;
+
+    padding: 0 19px;
+
+    margin: 0;
+}
+
+
+.dashboard-wrapper .metismenu li {
+    list-style: none;
+
+    margin-bottom: 5px;
+}
+
+
+.dashboard-wrapper .metismenu li a {
+    min-height: 43px;
+
+    width: 100%;
+
+    padding: 0 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    border-radius: 6px;
+
+    color: rgba(255,255,255,0.88);
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.2s ease;
+}
+
+
+.dashboard-wrapper .metismenu li a:hover {
+    background: rgba(255,255,255,0.12);
+
+    color: #ffffff;
+}
+
+/* =========================================================
+   SIDEBAR COPYRIGHT
+   ========================================================= */
+
+.dashboard-wrapper .dlabnav .copyright {
+    padding: 35px 28px;
+}
+
+
+.dashboard-wrapper .dlabnav .copyright p {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+/* ACTIVE DASHBOARD */
+
+/* ACTIVE MENU */
+
+.dashboard-wrapper .metismenu li a.active {
+    background: rgba(255,255,255,0.18);
+
+    color: #ffffff;
+}
+
+
+.dashboard-wrapper .metismenu li a .material-icons {
+    width: 25px;
+
+    margin-right: 10px;
+
+    font-size: 21px;
+
+    color: #ffffff;
+}
+
+
+.dashboard-wrapper .nav-text {
+    color: inherit;
+
+    white-space: nowrap;
+}
+/* =========================================================
+   TABLET SIDEBAR
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .dashboard-wrapper .nav-header {
+        width: 80px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .dashboard-wrapper .brand-logo {
+        justify-content: center;
+    }
+
+    .dashboard-wrapper .brand-title {
+        display: none;
+    }
+
+    .dashboard-wrapper .dlabnav {
+        width: 80px;
+    }
+
+    .dashboard-wrapper .metismenu {
+        padding: 0 10px;
+    }
+
+    .dashboard-wrapper .metismenu li a {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .dashboard-wrapper .metismenu li a .material-icons {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .dashboard-wrapper .nav-text {
+        display: none;
+    }
+
+    .dashboard-wrapper .copyright {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE SIDEBAR
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    /* Closed sidebar */
+
+    .dashboard-wrapper .nav-header {
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .dashboard-wrapper .dlabnav {
+        width: 0;
+        overflow: hidden;
+    }
+
+
+    /* Open sidebar */
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .nav-header {
+        width: 268px;
+        padding: 0 20px;
+
+        overflow: visible;
+
+        justify-content: flex-start;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .brand-logo {
+        justify-content: flex-start;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .brand-title {
+        display: block;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .dlabnav {
+        width: 268px;
+        overflow: visible;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .metismenu {
+        padding: 0 19px;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .metismenu li a {
+        padding: 0 22px;
+        justify-content: flex-start;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .metismenu li a .material-icons {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .nav-text {
+        display: inline;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .copyright {
+        display: block;
+    }
+
+}
+
+/* =========================================================
+   TABLET SIDEBAR
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .dashboard-wrapper .nav-header {
+        width: 80px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .dashboard-wrapper .dlabnav {
+        width: 80px;
+    }
+
+    .dashboard-wrapper .brand-logo {
+        justify-content: center;
+    }
+
+    .dashboard-wrapper .brand-title {
+        display: none;
+    }
+
+    .dashboard-wrapper .metismenu {
+        padding: 0 10px;
+    }
+
+    .dashboard-wrapper .metismenu li a {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .dashboard-wrapper .metismenu li a .material-icons {
+        margin-right: 0;
+    }
+
+    .dashboard-wrapper .nav-text {
+        display: none;
+    }
+
+    .dashboard-wrapper .copyright {
+        display: none;
+    }
+
+}/* =========================================================
+   TABLET + MOBILE SIDEBAR
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .dashboard-wrapper .sidebar-wrapper {
+        position: fixed;
+
+        top: 0;
+        left: -268px;
+
+        width: 268px;
+        height: 100vh;
+
+        z-index: 1100;
+
+        transition: left 0.3s ease;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open {
+        left: 0;
+    }
+
+}
+/* =========================================================
+   TABLET + MOBILE SIDEBAR
+   Hidden by default
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .dashboard-wrapper .sidebar-wrapper {
+        position: fixed;
+
+        top: 0;
+        left: -268px;
+
+        width: 268px;
+        height: 100vh;
+
+        z-index: 1100;
+
+        transition: left 0.3s ease;
+    }
+
+
+    /* When hamburger is clicked */
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open {
+        left: 0;
+    }
+
+}/* =========================================================
+   TABLET + MOBILE
+   HIDE SIDEBAR
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    /* Hide sidebar completely */
+
+    .dashboard-wrapper .sidebar-wrapper {
+        position: fixed;
+
+        top: 0;
+        left: -268px;
+
+        width: 268px;
+        height: 100vh;
+
+        z-index: 1100;
+
+        transition: left 0.3s ease;
+    }
+
+
+    /* Sidebar header */
+
+    .dashboard-wrapper .sidebar-wrapper .nav-header {
+        position: fixed;
+
+        top: 0;
+        left: -268px;
+
+        width: 268px;
+        height: var(--header-height);
+
+        transition: left 0.3s ease;
+    }
+
+
+    /* Sidebar navigation */
+
+    .dashboard-wrapper .sidebar-wrapper .dlabnav {
+        position: fixed;
+
+        top: var(--header-height);
+        left: -268px;
+        bottom: 0;
+
+        width: 268px;
+
+        transition: left 0.3s ease;
+    }
+
+
+    /* =====================================================
+       WHEN HAMBURGER IS CLICKED
+       ===================================================== */
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open {
+        left: 0;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .nav-header {
+        left: 0;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open .dlabnav {
+        left: 0;
+    }
+
+}/* =========================================================
+   TABLET + MOBILE
+   SIDEBAR HIDDEN BY DEFAULT
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .dashboard-wrapper .sidebar-wrapper {
+        display: none;
+    }
+
+    .dashboard-wrapper .sidebar-wrapper.sidebar-open {
+        display: block;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 268px;
+        height: 100vh;
+
+        z-index: 1005;
+    }
+
+}
