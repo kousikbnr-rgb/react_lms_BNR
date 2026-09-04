@@ -5,7 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile"
 import Course from "./pages/Course"
 import MCQ from "./pages/MCQ";
-
+//hello update
 
 
 function App() {
