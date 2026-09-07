@@ -16,26 +16,22 @@ import TrainerLayout from "./components/TrainerLayout";
 import Attendance from "./pages/trainer/Attendance";
 import BatchReport from "./pages/trainer/BatchReport";
 import StudentReport from "./pages/trainer/StudentReport";
+import Students from "./pages/trainer/Students";
+import Batches from "./pages/trainer/Batches";
+import TrainerProfile from "./pages/trainer/TrainerProfile";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-
         {/* <Route
           path="/"
           element={<h1>BNR LMS Home</h1>}
         /> */}
 
-        <Route
-          path="/course"
-          element={<Course />}
-        />
+        <Route path="/course" element={<Course />} />
 
-        <Route
-          path="/"
-          element={<Login />}
-        />
+        <Route path="/" element={<Login />} />
         <Route path="/" element={<h1>BNR LMS Home</h1>} />
 
         <Route path="/course" element={<Course />} />
@@ -46,20 +42,14 @@ function App() {
 
         <Route path="/dashboard" element={<Dashboard />} />
 
-        <Route
-          path="/dashboard"
-          element={<Dashboard />}
-        />
+        <Route path="/dashboard" element={<Dashboard />} />
 
-        <Route
-          path="/profile"
-          element={<Profile />}
-        />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/profile" element={<Profile />} />
 
         <Route path="/mcq/:course" element={<MCQ />} />
 
-        {/*trainer routes */}
+        {/*admin routes */}
 
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
@@ -68,8 +58,7 @@ function App() {
         <Route path="/admin/student" element={<AdminStudent />} />
         <Route path="/admin/allocate" element={<AdminAllocate />} />
 
-
-
+        {/*trainer routes */}
 
         <Route path="/trainer/login" element={<TrainerLogin />} />
 
@@ -105,6 +94,32 @@ function App() {
           element={
             <TrainerLayout>
               <StudentReport />
+            </TrainerLayout>
+          }
+        />
+        <Route
+          path="/trainer/students"
+          element={
+            <TrainerLayout>
+              <Students />
+            </TrainerLayout>
+          }
+        />
+
+        <Route
+          path="/trainer/batches"
+          element={
+            <TrainerLayout>
+              <Batches />
+            </TrainerLayout>
+          }
+        />
+
+        <Route
+          path="/trainer/profile"
+          element={
+            <TrainerLayout>
+              <TrainerProfile />
             </TrainerLayout>
           }
         />
