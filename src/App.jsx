@@ -22,10 +22,10 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route
+        {/* <Route
           path="/"
           element={<h1>BNR LMS Home</h1>}
-        />
+        /> */}
 
         <Route
           path="/course"
@@ -33,7 +33,7 @@ function App() {
         />
 
         <Route
-          path="/login"
+          path="/"
           element={<Login />}
         />
         <Route path="/" element={<h1>BNR LMS Home</h1>} />
