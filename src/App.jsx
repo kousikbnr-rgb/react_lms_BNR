@@ -5,14 +5,16 @@ import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile"
 import Course from "./pages/Course"
 import MCQ from "./pages/MCQ";
-
-
-
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminCourse from "./pages/admin/AdminCourse";
+import AdminTrainer from "./pages/admin/AdminTrainer";
+import AdminStudent from "./pages/admin/AdminStudent";
+import AdminAllocate from "./pages/admin/AdminAllocate";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-       
+
         <Route
           path="/"
           element={<h1>BNR LMS Home</h1>}
@@ -20,12 +22,12 @@ function App() {
 
         <Route
           path="/course"
-          element={<Course/>}
+          element={<Course />}
         />
 
         <Route
           path="/login"
-          element={<Login/>}
+          element={<Login />}
         />
 
 
@@ -39,12 +41,22 @@ function App() {
           element={<Dashboard />}
         />
 
-         <Route
+        <Route
           path="/profile"
-          element={<Profile/>}
+          element={<Profile />}
         />
 
         <Route path="/mcq/:course" element={<MCQ />} />
+
+
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/course" element={<AdminCourse />} />
+        <Route path="/admin/trainer" element={<AdminTrainer />} />
+        <Route path="/admin/student" element={<AdminStudent />} />
+        <Route path="/admin/allocate" element={<AdminAllocate />} />
+
+
 
 
 

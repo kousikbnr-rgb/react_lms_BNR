@@ -1,0 +1,360 @@
+/* =========================================================
+   ADMIN MODULE - SHARED STYLES
+   Scoped under .dashboard-wrapper so it inherits the
+   existing theme variables (--primary, --primary-dark)
+   and reuses .card / .btn / .table / .badge / .row / .col-*
+   already defined in dashboard.css.
+   ========================================================= */
+
+.dashboard-wrapper .admin-page {
+  width: 100%;
+}
+
+
+/* Extra grid helpers not already defined in dashboard.css */
+
+.dashboard-wrapper .col-md-4 {
+  position: relative;
+  width: 100%;
+}
+
+.dashboard-wrapper .col-md-3 {
+  position: relative;
+  width: 100%;
+}
+
+.dashboard-wrapper .col-md-12 {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .dashboard-wrapper .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.3333%;
+  }
+
+  .dashboard-wrapper .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .dashboard-wrapper .col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   PAGE HEADER (title + Create button)
+   ========================================================= */
+
+.admin-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.admin-page-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2a3558;
+}
+
+.admin-page-header p {
+  margin: 4px 0 0;
+  color: #7a7f9a;
+  font-size: 14px;
+}
+
+.admin-create-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  border: none;
+  cursor: pointer;
+}
+
+.admin-create-btn .material-icons {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   STAT CARDS (admin dashboard)
+   ========================================================= */
+
+.admin-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.admin-stat-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.admin-stat-icon.bg-course { background: linear-gradient(135deg,#4F46E5,#6366F1); }
+.admin-stat-icon.bg-trainer { background: linear-gradient(135deg,#16b9b1,#0f9891); }
+.admin-stat-icon.bg-student { background: linear-gradient(135deg,#ffb629,#ff9f1a); }
+.admin-stat-icon.bg-allocate { background: linear-gradient(135deg,#20bf6b,#189a56); }
+
+
+/* Status badge not already defined in dashboard.css */
+
+.dashboard-wrapper .badge-danger {
+  background: rgba(255, 90, 95, 0.12);
+  color: #ff5a5f;
+}
+
+.admin-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2a3558;
+  line-height: 1.2;
+}
+
+.admin-stat-label {
+  font-size: 13px;
+  color: #7a7f9a;
+}
+
+
+/* =========================================================
+   TABLE ROW ACTIONS
+   ========================================================= */
+
+.admin-table-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-icon-btn {
+  width: 32px;
+  height: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #f1f2fb;
+  color: var(--primary);
+
+  cursor: pointer;
+}
+
+.admin-icon-btn .material-icons {
+  font-size: 18px;
+}
+
+.admin-icon-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.admin-row-clickable {
+  cursor: pointer;
+}
+
+.admin-row-clickable:hover td {
+  background: #f7f7fc;
+}
+
+
+/* =========================================================
+   FORM (create / edit)
+   ========================================================= */
+
+.admin-form-group {
+  margin-bottom: 20px;
+}
+
+.admin-form-group label {
+  display: block;
+
+  color: #3d3b69;
+  font-weight: 600;
+  font-size: 14px;
+
+  margin-bottom: 8px;
+}
+
+.admin-form-group input,
+.admin-form-group select {
+  width: 100%;
+  height: 46px;
+
+  padding: 0 14px;
+
+  border: 1px solid #dfe1ef;
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 14px;
+  font-family: inherit;
+  color: #2a3558;
+
+  background: #ffffff;
+
+  transition: 0.2s;
+}
+
+.admin-form-group input[type="file"] {
+  padding: 9px 14px;
+}
+
+.admin-form-group input:focus,
+.admin-form-group select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(77, 68, 181, 0.12);
+}
+
+.admin-form-hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #9598b3;
+}
+
+.admin-form-actions {
+  display: flex;
+  gap: 12px;
+
+  margin-top: 8px;
+}
+
+.admin-logo-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.admin-logo-preview img {
+  width: 46px;
+  height: 46px;
+
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #dfe1ef;
+}
+
+
+/* =========================================================
+   TRAINER DETAIL PANEL
+   ========================================================= */
+
+.admin-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 24px;
+}
+
+.admin-detail-avatar {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg,#4F46E5,#6366F1);
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.admin-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #eef0f8;
+}
+
+.admin-detail-row:last-child {
+  border-bottom: none;
+}
+
+.admin-detail-row .material-icons {
+  color: var(--primary);
+  font-size: 20px;
+}
+
+.admin-detail-label {
+  min-width: 110px;
+  font-size: 13px;
+  color: #9598b3;
+}
+
+.admin-detail-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a3558;
+}
+
+.admin-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 14px;
+
+  cursor: pointer;
+  margin-bottom: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.admin-back-link .material-icons {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.admin-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9598b3;
+}
+
+.admin-empty .material-icons {
+  font-size: 36px;
+  color: #c7c9de;
+  margin-bottom: 8px;
+}
