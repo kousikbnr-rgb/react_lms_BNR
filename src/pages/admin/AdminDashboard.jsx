@@ -17,7 +17,7 @@ function AdminDashboard() {
         <div className="admin-page-header">
 
           <div>
-            <h2>Welcome back, Admin</h2>
+            <h2>Welcome back, Admin</h2>  
             <p>Here's what's happening across the academy today.</p>
           </div>
 

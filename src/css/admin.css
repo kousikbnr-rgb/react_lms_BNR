@@ -8,6 +8,9 @@
 
 .dashboard-wrapper .admin-page {
   width: 100%;
+  margin: 0;
+  padding:32px 30px 40px; 
+  box-sizing: border-box; 
 }
 
 
