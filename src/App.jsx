@@ -5,13 +5,11 @@ import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Course from "./pages/Course";
 import MCQ from "./pages/MCQ";
-<<<<<<< Updated upstream
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminCourse from "./pages/admin/AdminCourse";
 import AdminTrainer from "./pages/admin/AdminTrainer";
 import AdminStudent from "./pages/admin/AdminStudent";
 import AdminAllocate from "./pages/admin/AdminAllocate";
-=======
 import TrainerLogin from "./pages/TrainerLogin";
 import TrainerDashboard from "./pages/trainer/TrainerDashboard";
 import TrainerLayout from "./components/TrainerLayout";
@@ -19,12 +17,10 @@ import Attendance from "./pages/trainer/Attendance";
 import BatchReport from "./pages/trainer/BatchReport";
 import StudentReport from "./pages/trainer/StudentReport";
 
->>>>>>> Stashed changes
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-<<<<<<< Updated upstream
 
         <Route
           path="/"
@@ -40,19 +36,16 @@ function App() {
           path="/login"
           element={<Login />}
         />
-=======
         <Route path="/" element={<h1>BNR LMS Home</h1>} />
 
         <Route path="/course" element={<Course />} />
 
         <Route path="/login" element={<Login />} />
->>>>>>> Stashed changes
 
         <Route path="/register" element={<Register />} />
 
         <Route path="/dashboard" element={<Dashboard />} />
 
-<<<<<<< Updated upstream
         <Route
           path="/dashboard"
           element={<Dashboard />}
@@ -62,15 +55,12 @@ function App() {
           path="/profile"
           element={<Profile />}
         />
-=======
         <Route path="/profile" element={<Profile />} />
->>>>>>> Stashed changes
 
         <Route path="/mcq/:course" element={<MCQ />} />
 
         {/*trainer routes */}
 
-<<<<<<< Updated upstream
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/course" element={<AdminCourse />} />
@@ -81,9 +71,7 @@ function App() {
 
 
 
-=======
         <Route path="/trainer/login" element={<TrainerLogin />} />
->>>>>>> Stashed changes
 
         <Route path="/trainer/login" element={<TrainerLogin />} />
 
