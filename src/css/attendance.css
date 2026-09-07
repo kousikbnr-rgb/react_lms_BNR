@@ -1,0 +1,719 @@
+/* =========================================================
+   ATTENDANCE PAGE
+   ========================================================= */
+
+.attendance-page {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.attendance-heading {
+  margin-bottom: 24px;
+}
+
+.attendance-heading h2 {
+  margin: 0 0 6px;
+
+  font-size: 26px;
+  line-height: 1.3;
+
+  font-weight: 600;
+
+  color: #1f315c;
+}
+
+.attendance-heading p {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: #777;
+}
+
+
+/* =========================================================
+   FILTER CARD
+   ========================================================= */
+
+.attendance-filter-card {
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  padding: 22px;
+
+  margin-bottom: 20px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   FILTER ROW
+   ========================================================= */
+
+.attendance-filter-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(200px, 1fr)
+    minmax(200px, 1fr)
+    auto;
+
+  align-items: end;
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.attendance-form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.attendance-form-group label {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #344054;
+}
+
+
+/* =========================================================
+   SELECT + INPUT
+   ========================================================= */
+
+.attendance-form-group select,
+.attendance-form-group input {
+  width: 100%;
+
+  height: 46px;
+
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #344054;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.attendance-form-group select:focus,
+.attendance-form-group input:focus {
+  border-color: #5b4bc4;
+
+  box-shadow:
+    0 0 0 3px rgba(91, 75, 196, 0.10);
+}
+
+
+/* =========================================================
+   LOAD BUTTON
+   ========================================================= */
+
+.attendance-button-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.load-students-btn {
+  height: 46px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #5b4bc4;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.load-students-btn:hover {
+  background: #4c3db3;
+
+  transform: translateY(-1px);
+}
+
+.load-students-btn .material-icons {
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.attendance-message {
+  margin-top: 15px;
+
+  padding: 11px 14px;
+
+  border-radius: 7px;
+
+  background: #e8e7ff;
+
+  color: #4d42a5;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   STUDENTS CARD
+   ========================================================= */
+
+.attendance-students-card {
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  padding: 22px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   STUDENT CARD HEADER
+   ========================================================= */
+
+.attendance-card-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.attendance-card-header h3 {
+  margin: 0 0 4px;
+
+  font-size: 19px;
+
+  font-weight: 600;
+
+  color: #1f315c;
+}
+
+.attendance-card-header p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #777;
+}
+
+.attendance-card-header > span {
+  font-size: 13px;
+
+  color: #777;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.attendance-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.attendance-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 600px;
+}
+
+.attendance-table th {
+  padding: 14px 15px;
+
+  text-align: left;
+
+  background: #f6f7fb;
+
+  color: #344054;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.attendance-table td {
+  padding: 14px 15px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  color: #475467;
+
+  font-size: 14px;
+}
+
+.attendance-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   STUDENT NAME
+   ========================================================= */
+
+.student-name {
+  font-weight: 500;
+
+  color: #1f315c;
+}
+
+
+/* =========================================================
+   ATTENDANCE STATUS
+   ========================================================= */
+
+.attendance-status {
+  min-width: 125px;
+
+  height: 38px;
+
+  padding: 0 12px;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+
+/* Present */
+
+.attendance-status.present {
+  background: #e5f8ed;
+
+  border: 1px solid #b8e8cb;
+
+  color: #29945a;
+}
+
+
+/* Absent */
+
+.attendance-status.absent {
+  background: #fdeaea;
+
+  border: 1px solid #f4c4c2;
+
+  color: #d9534f;
+}
+
+
+/* Leave */
+
+.attendance-status.leave {
+  background: #fff1df;
+
+  border: 1px solid #f2d3a5;
+
+  color: #c57918;
+}
+
+
+/* =========================================================
+   SAVE SECTION
+   ========================================================= */
+
+.attendance-save-section {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 20px;
+}
+
+.save-attendance-btn {
+  height: 44px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #5b4bc4;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.save-attendance-btn:hover {
+  background: #4c3db3;
+
+  transform: translateY(-1px);
+}
+
+.save-attendance-btn .material-icons {
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+body[data-theme-version="dark"] .attendance-heading h2 {
+  color: #ffffff;
+}
+
+body[data-theme-version="dark"] .attendance-heading p {
+  color: #aaaaaa;
+}
+
+
+/* Filter card */
+
+body[data-theme-version="dark"] .attendance-filter-card {
+  background: #292929;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Labels */
+
+body[data-theme-version="dark"] .attendance-form-group label {
+  color: #d4d4d4;
+}
+
+
+/* Inputs */
+
+body[data-theme-version="dark"] .attendance-form-group select,
+body[data-theme-version="dark"] .attendance-form-group input {
+  background: #333333;
+
+  border-color: #484848;
+
+  color: #ffffff;
+}
+
+body[data-theme-version="dark"] .attendance-form-group select:focus,
+body[data-theme-version="dark"] .attendance-form-group input:focus {
+  border-color: #7668d8;
+
+  box-shadow:
+    0 0 0 3px rgba(118, 104, 216, 0.15);
+}
+
+
+/* Message */
+
+body[data-theme-version="dark"] .attendance-message {
+  background: #38356b;
+
+  color: #dcd9ff;
+}
+
+
+/* Students card */
+
+body[data-theme-version="dark"] .attendance-students-card {
+  background: #292929;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Student card heading */
+
+body[data-theme-version="dark"] .attendance-card-header h3 {
+  color: #ffffff;
+}
+
+body[data-theme-version="dark"] .attendance-card-header p,
+body[data-theme-version="dark"] .attendance-card-header > span {
+  color: #aaaaaa;
+}
+
+
+/* Table header */
+
+body[data-theme-version="dark"] .attendance-table th {
+  background: #333333;
+
+  color: #dddddd;
+
+  border-bottom-color: #484848;
+}
+
+
+/* Table cells */
+
+body[data-theme-version="dark"] .attendance-table td {
+  color: #cccccc;
+
+  border-bottom-color: #414141;
+}
+
+
+/* Student name */
+
+body[data-theme-version="dark"] .student-name {
+  color: #ffffff;
+}
+
+
+/* Dark status */
+
+body[data-theme-version="dark"] .attendance-status.present {
+  background: #234a35;
+
+  border-color: #367650;
+
+  color: #72d79c;
+}
+
+body[data-theme-version="dark"] .attendance-status.absent {
+  background: #522c2b;
+
+  border-color: #7b4140;
+
+  color: #ff817c;
+}
+
+body[data-theme-version="dark"] .attendance-status.leave {
+  background: #513b20;
+
+  border-color: #76572d;
+
+  color: #f0ad4e;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .attendance-page {
+    padding: 18px;
+  }
+
+  .attendance-filter-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .attendance-button-wrapper {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+  .attendance-page {
+    padding: 16px;
+  }
+
+  .attendance-filter-card,
+  .attendance-students-card {
+    padding: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .attendance-page {
+    padding: 15px;
+  }
+
+  .attendance-heading {
+    margin-bottom: 20px;
+  }
+
+  .attendance-heading h2 {
+    font-size: 23px;
+  }
+
+  .attendance-heading p {
+    font-size: 14px;
+  }
+
+
+  .attendance-filter-card {
+    padding: 18px;
+  }
+
+
+  .attendance-filter-row {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+
+  .attendance-button-wrapper {
+    grid-column: auto;
+  }
+
+
+  .load-students-btn {
+    width: 100%;
+  }
+
+
+  .attendance-students-card {
+    padding: 18px;
+  }
+
+
+  .attendance-card-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    margin-bottom: 18px;
+  }
+
+
+  .attendance-card-header > span {
+    font-size: 12px;
+  }
+
+
+  .attendance-save-section {
+    justify-content: stretch;
+  }
+
+
+  .save-attendance-btn {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .attendance-page {
+    padding: 12px;
+  }
+
+
+  .attendance-filter-card,
+  .attendance-students-card {
+    padding: 15px;
+  }
+
+
+  .attendance-form-group select,
+  .attendance-form-group input {
+    height: 44px;
+
+    font-size: 13px;
+  }
+
+
+  .attendance-table {
+    min-width: 520px;
+  }
+
+}

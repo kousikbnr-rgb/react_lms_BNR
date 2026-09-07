@@ -1,0 +1,777 @@
+/* =========================================================
+   BATCH REPORT
+   ========================================================= */
+
+.batch-report-page {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.batch-report-heading {
+  margin-bottom: 24px;
+}
+
+.batch-report-heading h2 {
+  margin: 0 0 6px;
+
+  font-size: 26px;
+  font-weight: 600;
+
+  color: #1f315c;
+}
+
+.batch-report-heading p {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: #777;
+}
+
+
+/* =========================================================
+   FILTER
+   ========================================================= */
+
+.batch-report-filter-card {
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  padding: 22px;
+
+  margin-bottom: 20px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.batch-report-filter-row {
+  display: grid;
+
+  grid-template-columns:
+    1.2fr
+    1fr
+    1fr
+    auto;
+
+  align-items: end;
+
+  gap: 20px;
+}
+
+.batch-report-form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.batch-report-form-group label {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: #344054;
+}
+
+.batch-report-form-group select,
+.batch-report-form-group input {
+  width: 100%;
+
+  height: 46px;
+
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #344054;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.batch-report-form-group select:focus,
+.batch-report-form-group input:focus {
+  border-color: #5b4bc4;
+
+  box-shadow:
+    0 0 0 3px rgba(91, 75, 196, 0.10);
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+   ========================================================= */
+
+.batch-report-button-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.batch-report-search-btn {
+  height: 46px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #5b4bc4;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  white-space: nowrap;
+}
+
+.batch-report-search-btn:hover {
+  background: #4c3db3;
+}
+
+.batch-report-search-btn .material-icons {
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.batch-report-message {
+  margin-top: 15px;
+
+  padding: 11px 14px;
+
+  border-radius: 7px;
+
+  background: #e8e7ff;
+
+  color: #4d42a5;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.batch-report-summary {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-bottom: 20px;
+}
+
+.report-summary-card {
+  min-width: 0;
+
+  background: #e8e7ff;
+
+  border-radius: 10px;
+
+  padding: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  box-sizing: border-box;
+}
+
+.report-summary-card > .material-icons {
+  font-size: 28px;
+
+  color: #5547c8;
+}
+
+.report-summary-card strong {
+  display: block;
+
+  font-size: 23px;
+
+  line-height: 1.2;
+
+  color: #1f315c;
+}
+
+.report-summary-card p {
+  margin: 4px 0 0;
+
+  font-size: 12px;
+
+  color: #777;
+}
+
+
+/* Summary colors */
+
+.report-summary-card.present {
+  background: #e5f8ed;
+}
+
+.report-summary-card.present > .material-icons {
+  color: #29945a;
+}
+
+.report-summary-card.absent {
+  background: #fdeaea;
+}
+
+.report-summary-card.absent > .material-icons {
+  color: #d9534f;
+}
+
+.report-summary-card.leave {
+  background: #fff1df;
+}
+
+.report-summary-card.leave > .material-icons {
+  color: #c57918;
+}
+
+.report-summary-card.percentage {
+  background: #e4f4ff;
+}
+
+.report-summary-card.percentage > .material-icons {
+  color: #2385bd;
+}
+
+
+/* =========================================================
+   TABLE CARD
+   ========================================================= */
+
+.batch-report-table-card {
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  padding: 22px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.batch-report-table-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.batch-report-table-header h3 {
+  margin: 0 0 4px;
+
+  font-size: 19px;
+
+  font-weight: 600;
+
+  color: #1f315c;
+}
+
+.batch-report-table-header p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #777;
+}
+
+.batch-report-table-header > span {
+  font-size: 13px;
+
+  color: #777;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.batch-report-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.batch-report-table {
+  width: 100%;
+
+  min-width: 650px;
+
+  border-collapse: collapse;
+}
+
+.batch-report-table th {
+  padding: 14px 15px;
+
+  text-align: left;
+
+  background: #f6f7fb;
+
+  color: #344054;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.batch-report-table td {
+  padding: 14px 15px;
+
+  font-size: 14px;
+
+  color: #475467;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.batch-report-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.batch-report-table td strong {
+  color: #1f315c;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.report-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 80px;
+
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+.report-status.present {
+  background: #e5f8ed;
+
+  color: #29945a;
+}
+
+.report-status.absent {
+  background: #fdeaea;
+
+  color: #d9534f;
+}
+
+.report-status.leave {
+  background: #fff1df;
+
+  color: #c57918;
+}
+
+.report-status.not {
+  background: #eeeeee;
+
+  color: #777;
+}
+
+
+/* =========================================================
+   NO DATA
+   ========================================================= */
+
+.no-report-data {
+  min-height: 250px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.no-report-data .material-icons {
+  font-size: 45px;
+
+  color: #aaa;
+
+  margin-bottom: 10px;
+}
+
+.no-report-data h4 {
+  margin: 0 0 5px;
+
+  font-size: 17px;
+
+  color: #475467;
+}
+
+.no-report-data p {
+  max-width: 450px;
+
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #888;
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+body[data-theme-version="dark"] .batch-report-heading h2 {
+  color: #ffffff;
+}
+
+body[data-theme-version="dark"] .batch-report-heading p {
+  color: #aaaaaa;
+}
+
+
+/* Filter */
+
+body[data-theme-version="dark"] .batch-report-filter-card,
+body[data-theme-version="dark"] .batch-report-table-card {
+  background: #292929;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+body[data-theme-version="dark"] .batch-report-form-group label {
+  color: #d4d4d4;
+}
+
+body[data-theme-version="dark"] .batch-report-form-group select,
+body[data-theme-version="dark"] .batch-report-form-group input {
+  background: #333333;
+
+  border-color: #484848;
+
+  color: #ffffff;
+}
+
+body[data-theme-version="dark"] .batch-report-message {
+  background: #38356b;
+
+  color: #dcd9ff;
+}
+
+
+/* Dark summary */
+
+body[data-theme-version="dark"] .report-summary-card {
+  background: #38356b;
+}
+
+body[data-theme-version="dark"] .report-summary-card.present {
+  background: #29483a;
+}
+
+body[data-theme-version="dark"] .report-summary-card.absent {
+  background: #522c2b;
+}
+
+body[data-theme-version="dark"] .report-summary-card.leave {
+  background: #513b20;
+}
+
+body[data-theme-version="dark"] .report-summary-card.percentage {
+  background: #263f52;
+}
+
+body[data-theme-version="dark"] .report-summary-card strong {
+  color: #ffffff;
+}
+
+body[data-theme-version="dark"] .report-summary-card p {
+  color: #c2c2c2;
+}
+
+
+/* Dark table */
+
+body[data-theme-version="dark"] .batch-report-table-header h3 {
+  color: #ffffff;
+}
+
+body[data-theme-version="dark"] .batch-report-table-header p,
+body[data-theme-version="dark"] .batch-report-table-header > span {
+  color: #aaaaaa;
+}
+
+body[data-theme-version="dark"] .batch-report-table th {
+  background: #333333;
+
+  color: #dddddd;
+
+  border-bottom-color: #484848;
+}
+
+body[data-theme-version="dark"] .batch-report-table td {
+  color: #cccccc;
+
+  border-bottom-color: #414141;
+}
+
+body[data-theme-version="dark"] .batch-report-table td strong {
+  color: #ffffff;
+}
+
+
+/* Dark status */
+
+body[data-theme-version="dark"] .report-status.present {
+  background: #234a35;
+
+  color: #72d79c;
+}
+
+body[data-theme-version="dark"] .report-status.absent {
+  background: #522c2b;
+
+  color: #ff817c;
+}
+
+body[data-theme-version="dark"] .report-status.leave {
+  background: #513b20;
+
+  color: #f0ad4e;
+}
+
+body[data-theme-version="dark"] .report-status.not {
+  background: #444444;
+
+  color: #cccccc;
+}
+
+
+/* No data */
+
+body[data-theme-version="dark"] .no-report-data h4 {
+  color: #ffffff;
+}
+
+body[data-theme-version="dark"] .no-report-data p {
+  color: #999999;
+}
+
+body[data-theme-version="dark"] .no-report-data .material-icons {
+  color: #777777;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .batch-report-page {
+    padding: 18px;
+  }
+
+  .batch-report-filter-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .batch-report-button-wrapper {
+    grid-column: 1 / -1;
+  }
+
+  .batch-report-search-btn {
+    width: 100%;
+  }
+
+  .batch-report-summary {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+  .batch-report-page {
+    padding: 16px;
+  }
+
+  .batch-report-filter-card,
+  .batch-report-table-card {
+    padding: 20px;
+  }
+
+  .batch-report-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .batch-report-page {
+    padding: 15px;
+  }
+
+  .batch-report-heading {
+    margin-bottom: 20px;
+  }
+
+  .batch-report-heading h2 {
+    font-size: 23px;
+  }
+
+  .batch-report-heading p {
+    font-size: 14px;
+  }
+
+
+  .batch-report-filter-card {
+    padding: 18px;
+  }
+
+  .batch-report-filter-row {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .batch-report-button-wrapper {
+    grid-column: auto;
+  }
+
+
+  .batch-report-summary {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .batch-report-table-card {
+    padding: 18px;
+  }
+
+
+  .batch-report-table-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .batch-report-table-header > span {
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .batch-report-page {
+    padding: 12px;
+  }
+
+  .batch-report-filter-card,
+  .batch-report-table-card {
+    padding: 15px;
+  }
+
+  .batch-report-form-group select,
+  .batch-report-form-group input {
+    height: 44px;
+
+    font-size: 13px;
+  }
+
+  .report-summary-card {
+    padding: 16px;
+  }
+
+  .batch-report-table {
+    min-width: 600px;
+  }
+
+}

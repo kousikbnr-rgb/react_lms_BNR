@@ -54,15 +54,29 @@ function Header({ sidebarOpen, setSidebarOpen }) {
      PAGE TITLE
      ========================================================= */
 
-  let pageTitle = "DASHBOARD";
+ let pageTitle = "DASHBOARD";
 
-  if (location.pathname === "/profile") {
-    pageTitle = "PROFILE";
-  } else if (location.pathname === "/course") {
-    pageTitle = "COURSE";
-  } else if (location.pathname === "/mcq") {
-    pageTitle = "MCQ TEST";
-  }
+if (location.pathname === "/profile") {
+  pageTitle = "PROFILE";
+} else if (location.pathname === "/course") {
+  pageTitle = "COURSE";
+} else if (location.pathname === "/mcq") {
+  pageTitle = "MCQ TEST";
+} else if (location.pathname === "/trainer/dashboard") {
+  pageTitle = "TRAINER DASHBOARD";
+} else if (location.pathname === "/trainer/attendance") {
+  pageTitle = "ATTENDANCE";
+} else if (location.pathname === "/trainer/reports/batch") {
+  pageTitle = "BATCH REPORT";
+} else if (location.pathname === "/trainer/reports/student") {
+  pageTitle = "STUDENT REPORT";
+} else if (location.pathname === "/trainer/students") {
+  pageTitle = "STUDENTS";
+} else if (location.pathname === "/trainer/batches") {
+  pageTitle = "BATCHES";
+} else if (location.pathname === "/trainer/profile") {
+  pageTitle = "PROFILE";
+}
 
   return (
     <>
