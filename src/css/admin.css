@@ -9,8 +9,121 @@
 .dashboard-wrapper .admin-page {
   width: 100%;
   margin: 0;
-  padding:32px 30px 40px; 
-  box-sizing: border-box; 
+  padding: 32px 30px 40px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   POLISH — cards, buttons, tables (admin pages only)
+   ========================================================= */
+
+.dashboard-wrapper .admin-page .card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(42, 53, 88, 0.08);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.dashboard-wrapper .admin-page .card:hover {
+  box-shadow: 0 10px 28px rgba(42, 53, 88, 0.12);
+}
+
+.dashboard-wrapper .admin-page .admin-stat-card {
+  padding: 4px 2px;
+}
+
+.dashboard-wrapper .admin-page .col-xl-3 .card:hover,
+.dashboard-wrapper .admin-page .col-md-6 .card:hover {
+  transform: translateY(-3px);
+}
+
+.dashboard-wrapper .admin-page .card-header {
+  border-bottom: 1px solid #eef0f8;
+}
+
+.dashboard-wrapper .admin-page .btn {
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  box-shadow: 0 2px 8px rgba(42, 53, 88, 0.10);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+}
+
+.dashboard-wrapper .admin-page .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(42, 53, 88, 0.16);
+}
+
+.dashboard-wrapper .admin-page .btn:active {
+  transform: translateY(0);
+}
+
+.dashboard-wrapper .admin-page .table th {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #9598b3;
+
+  padding: 14px 16px;
+  border-bottom: 2px solid #eef0f8;
+  background: #fbfbfe;
+  white-space: nowrap;
+}
+
+.dashboard-wrapper .admin-page .table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.dashboard-wrapper .admin-page .table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.dashboard-wrapper .admin-page .table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #2a3558;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f2f8;
+}
+
+.dashboard-wrapper .admin-page .table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.dashboard-wrapper .admin-page .table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dashboard-wrapper .admin-page .table tbody tr:hover {
+  background: #f7f8fd;
+}
+
+.dashboard-wrapper .admin-page .card-body {
+  padding: 8px 20px 20px;
+}
+
+.dashboard-wrapper .admin-page .badge {
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* Row action icon buttons — a bit more refined */
+
+.dashboard-wrapper .admin-page .admin-table-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.dashboard-wrapper .admin-page .admin-icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
 }
 
 
@@ -65,13 +178,13 @@
 
 .admin-page-header h2 {
   margin: 0;
-  font-size: 22px;
-  font-weight: 600;
-  color: #2a3558;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f2a44;
 }
 
 .admin-page-header p {
-  margin: 4px 0 0;
+  margin: 6px 0 0;
   color: #7a7f9a;
   font-size: 14px;
 }
@@ -91,34 +204,63 @@
 
 
 /* =========================================================
-   STAT CARDS (admin dashboard)
+   STAT CARDS (admin dashboard) — pastel style
    ========================================================= */
 
-.admin-stat-card {
+.dashboard-wrapper .admin-page .admin-stat-card {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
+
+  padding: 22px 20px;
+
+  border-radius: 16px;
+  border: none;
+  box-shadow: none;
 }
 
+.dashboard-wrapper .admin-page .admin-stat-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.admin-stat-purple { background: #EDE9FE; }
+.admin-stat-blue   { background: #DCEEFB; }
+.admin-stat-green  { background: #DFF7E9; }
+.admin-stat-orange { background: #FDEBD3; }
+
+.admin-stat-purple .admin-stat-icon { background: #6C5CE7; }
+.admin-stat-blue   .admin-stat-icon { background: #3B9EF5; }
+.admin-stat-green  .admin-stat-icon { background: #22B573; }
+.admin-stat-orange .admin-stat-icon { background: #F0A63C; }
+
 .admin-stat-icon {
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
   flex-shrink: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 12px;
+  border-radius: 14px;
 
   color: #ffffff;
   font-size: 24px;
 }
 
-.admin-stat-icon.bg-course { background: linear-gradient(135deg,#4F46E5,#6366F1); }
-.admin-stat-icon.bg-trainer { background: linear-gradient(135deg,#16b9b1,#0f9891); }
-.admin-stat-icon.bg-student { background: linear-gradient(135deg,#ffb629,#ff9f1a); }
-.admin-stat-icon.bg-allocate { background: linear-gradient(135deg,#20bf6b,#189a56); }
+.admin-stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2a44;
+  line-height: 1.2;
+}
+
+.admin-stat-label {
+  font-size: 14px;
+  color: #565b78;
+  margin-top: 2px;
+}
 
 
 /* Status badge not already defined in dashboard.css */
@@ -198,7 +340,7 @@
 
   color: #3d3b69;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 14px; 
 
   margin-bottom: 8px;
 }
