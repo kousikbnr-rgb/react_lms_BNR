@@ -19,127 +19,125 @@ import StudentReport from "./pages/trainer/StudentReport";
 import Students from "./pages/trainer/Students";
 import Batches from "./pages/trainer/Batches";
 import TrainerProfile from "./pages/trainer/TrainerProfile";
-import UserForm from "./components/UserForm";
-import UserDetails from "./components/UserDetails";
 
 function App() {
 
 
   
- return (
-    <div>
-      <UserForm />
+//  return (
+    // <div>
+    //   <UserForm />
 
-      <hr />
+    //   <hr />
 
-      <UserDetails />
-    </div>
+    //   <UserDetails />
+    // </div>
+  
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* <Route
+          path="/"
+          element={<h1>BNR LMS Home</h1>}
+        /> */}
+
+        <Route path="/course" element={<Course />} />
+
+        <Route path="/" element={<Login />} />
+        <Route path="/" element={<h1>BNR LMS Home</h1>} />
+
+        <Route path="/course" element={<Course />} />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/register" element={<Register />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
+
+        <Route path="/dashboard" element={<Dashboard />} />
+
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
+
+        <Route path="/mcq/:course" element={<MCQ />} />
+
+        {/*admin routes */}
+
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/course" element={<AdminCourse />} />
+        <Route path="/admin/trainer" element={<AdminTrainer />} />
+        <Route path="/admin/student" element={<AdminStudent />} />
+        <Route path="/admin/allocate" element={<AdminAllocate />} />
+
+        {/*trainer routes */}
+
+        <Route path="/trainer/login" element={<TrainerLogin />} />
+
+        <Route path="/trainer/login" element={<TrainerLogin />} />
+
+        <Route
+          path="/trainer/dashboard"
+          element={
+            <TrainerLayout>
+              <TrainerDashboard />
+            </TrainerLayout>
+          }
+        />
+
+        <Route
+          path="/trainer/attendance"
+          element={
+            <TrainerLayout>
+              <Attendance />
+            </TrainerLayout>
+          }
+        />
+        <Route
+          path="/trainer/reports/batch"
+          element={
+            <TrainerLayout>
+              <BatchReport />
+            </TrainerLayout>
+          }
+        />
+        <Route
+          path="/trainer/reports/student"
+          element={
+            <TrainerLayout>
+              <StudentReport />
+            </TrainerLayout>
+          }
+        />
+        <Route
+          path="/trainer/students"
+          element={
+            <TrainerLayout>
+              <Students />
+            </TrainerLayout>
+          }
+        />
+
+        <Route
+          path="/trainer/batches"
+          element={
+            <TrainerLayout>
+              <Batches />
+            </TrainerLayout>
+          }
+        />
+
+        <Route
+          path="/trainer/profile"
+          element={
+            <TrainerLayout>
+              <TrainerProfile />
+            </TrainerLayout>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
-  // return (
-  //   <BrowserRouter>
-  //     <Routes>
-  //       {/* <Route
-  //         path="/"
-  //         element={<h1>BNR LMS Home</h1>}
-  //       /> */}
-
-  //       <Route path="/course" element={<Course />} />
-
-  //       <Route path="/" element={<Login />} />
-  //       <Route path="/" element={<h1>BNR LMS Home</h1>} />
-
-  //       <Route path="/course" element={<Course />} />
-
-  //       <Route path="/login" element={<Login />} />
-
-  //       <Route path="/register" element={<Register />} />
-
-  //       <Route path="/dashboard" element={<Dashboard />} />
-
-  //       <Route path="/dashboard" element={<Dashboard />} />
-
-  //       <Route path="/profile" element={<Profile />} />
-  //       <Route path="/profile" element={<Profile />} />
-
-  //       <Route path="/mcq/:course" element={<MCQ />} />
-
-  //       {/*admin routes */}
-
-  //       <Route path="/admin" element={<AdminDashboard />} />
-  //       <Route path="/admin/dashboard" element={<AdminDashboard />} />
-  //       <Route path="/admin/course" element={<AdminCourse />} />
-  //       <Route path="/admin/trainer" element={<AdminTrainer />} />
-  //       <Route path="/admin/student" element={<AdminStudent />} />
-  //       <Route path="/admin/allocate" element={<AdminAllocate />} />
-
-  //       {/*trainer routes */}
-
-  //       <Route path="/trainer/login" element={<TrainerLogin />} />
-
-  //       <Route path="/trainer/login" element={<TrainerLogin />} />
-
-  //       <Route
-  //         path="/trainer/dashboard"
-  //         element={
-  //           <TrainerLayout>
-  //             <TrainerDashboard />
-  //           </TrainerLayout>
-  //         }
-  //       />
-
-  //       <Route
-  //         path="/trainer/attendance"
-  //         element={
-  //           <TrainerLayout>
-  //             <Attendance />
-  //           </TrainerLayout>
-  //         }
-  //       />
-  //       <Route
-  //         path="/trainer/reports/batch"
-  //         element={
-  //           <TrainerLayout>
-  //             <BatchReport />
-  //           </TrainerLayout>
-  //         }
-  //       />
-  //       <Route
-  //         path="/trainer/reports/student"
-  //         element={
-  //           <TrainerLayout>
-  //             <StudentReport />
-  //           </TrainerLayout>
-  //         }
-  //       />
-  //       <Route
-  //         path="/trainer/students"
-  //         element={
-  //           <TrainerLayout>
-  //             <Students />
-  //           </TrainerLayout>
-  //         }
-  //       />
-
-  //       <Route
-  //         path="/trainer/batches"
-  //         element={
-  //           <TrainerLayout>
-  //             <Batches />
-  //           </TrainerLayout>
-  //         }
-  //       />
-
-  //       <Route
-  //         path="/trainer/profile"
-  //         element={
-  //           <TrainerLayout>
-  //             <TrainerProfile />
-  //           </TrainerLayout>
-  //         }
-  //       />
-  //     </Routes>
-  //   </BrowserRouter>
-  // );
 }
 
 
