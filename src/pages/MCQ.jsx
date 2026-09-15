@@ -12,7 +12,7 @@ function MCQ() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
 
-    // const q = currentQuestions[currentQuestion];
+     const q = currentQuestions[currentQuestion];
 
     return (
         <Layout>
