@@ -5,6 +5,8 @@ import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Course from "./pages/Course";
 import MCQ from "./pages/MCQ";
+import Apti from "./pages/AptitudeTest";
+import Tech from "./pages/TechTest";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminCourse from "./pages/admin/AdminCourse";
 import AdminTrainer from "./pages/admin/AdminTrainer";
@@ -19,6 +21,10 @@ import StudentReport from "./pages/trainer/StudentReport";
 import Students from "./pages/trainer/Students";
 import Batches from "./pages/trainer/Batches";
 import TrainerProfile from "./pages/trainer/TrainerProfile";
+import TestAllocate from "./pages/admin/TestAllocate";
+import TestResultreport from "./pages/admin/ResultReport";
+
+
 
 function App() {
 
@@ -32,7 +38,7 @@ function App() {
 
     //   <UserDetails />
     // </div>
-  
+ 
   return (
     <BrowserRouter>
       <Routes>
@@ -44,7 +50,7 @@ function App() {
         <Route path="/course" element={<Course />} />
 
         <Route path="/" element={<Login />} />
-        <Route path="/" element={<h1>BNR LMS Home</h1>} />
+        {/* <Route path="/" element={<h1>BNR LMS Home</h1>} /> */}
 
         <Route path="/course" element={<Course />} />
 
@@ -57,9 +63,12 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
 
         <Route path="/profile" element={<Profile />} />
-        <Route path="/profile" element={<Profile />} />
+        {/* <Route path="/profile" element={<Profile />} /> */}
 
-        <Route path="/mcq/:course" element={<MCQ />} />
+        <Route path="/aptitudeTest" element={<Apti />} />
+        <Route path="/technicalTest" element={<Tech />} />
+        <Route path="/test/allocate" element={<TestAllocate />} />
+
 
         {/*admin routes */}
 
@@ -69,6 +78,9 @@ function App() {
         <Route path="/admin/trainer" element={<AdminTrainer />} />
         <Route path="/admin/student" element={<AdminStudent />} />
         <Route path="/admin/allocate" element={<AdminAllocate />} />
+        <Route path="/admin/results" element={<TestResultreport />} />
+
+        TestResultreport
 
         {/*trainer routes */}
 

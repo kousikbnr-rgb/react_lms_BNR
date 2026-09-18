@@ -1,36 +1,20 @@
 import { NavLink } from "react-router-dom";
 import "../css/sidebar.css";
 import "../css/theme.css";
+ import logo from "../assets/images/cogniitec-logo.png"; 
 function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
   return (
     <div
-      className={`sidebar-wrapper ${
-        sidebarOpen ? "sidebar-open" : ""
-      }`}
+      className={`sidebar-wrapper ${sidebarOpen ? "sidebar-open" : ""
+        }`}
     >
 
       {/* Sidebar Brand */}
 
       <div className="nav-header">
 
-        <NavLink
-          to="/dashboard"
-          className="brand-logo"
-          onClick={() => setSidebarOpen(false)}
-        >
-
-          <div className="logo-abbr">
-            BR
-          </div>
-
-          <div className="brand-title">
-            <h2>
-               Academy
-            </h2>
-          </div>
-
-        </NavLink>
+       <NavLink to="/dashboard" className="brand-logo" onClick={() => setSidebarOpen(false)} > <img src={logo} alt="Academy Logo" className="brand-logo-image" /> </NavLink>
 
       </div>
 
@@ -43,7 +27,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
           <ul className="metismenu" id="menu">
 
-            <li>
+            {/* <li>
               <NavLink
                 to="/dashboard"
                 className={({ isActive }) =>
@@ -61,7 +45,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 </span>
 
               </NavLink>
-            </li>
+            </li> */}
 
 
             <li>
@@ -87,7 +71,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
 
             <li>
               <NavLink
-                to="/course"
+                to="/aptitudeTest"
                 className={({ isActive }) =>
                   isActive ? "active" : ""
                 }
@@ -99,7 +83,27 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 </span>
 
                 <span className="nav-text">
-                  Course
+                  Aptitude Test
+                </span>
+
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/technicalTest"
+                className={({ isActive }) =>
+                  isActive ? "active" : ""
+                }
+                onClick={() => setSidebarOpen(false)}
+              >
+
+                <span className="material-icons">
+                  menu_book
+                </span>
+
+                <span className="nav-text">
+                  Technical Test
                 </span>
 
               </NavLink>

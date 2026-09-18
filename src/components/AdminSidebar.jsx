@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "../css/sidebar.css";
 import "../css/theme.css";
+ import logo from "../assets/images/cogniitec-logo.png"; 
+
 
 function AdminSidebar({ sidebarOpen, setSidebarOpen }) {
 
@@ -15,23 +17,8 @@ function AdminSidebar({ sidebarOpen, setSidebarOpen }) {
 
       <div className="nav-header">
 
-        <NavLink
-          to="/admin/dashboard"
-          className="brand-logo"
-          onClick={() => setSidebarOpen(false)}
-        >
-
-          <div className="logo-abbr">
-            BR
-          </div>
-
-          <div className="brand-title">
-            <h2>
-              Admin
-            </h2>
-          </div>
-
-        </NavLink>
+             <NavLink to="/dashboard" className="brand-logo" onClick={() => setSidebarOpen(false)} > <img src={logo} alt="Academy Logo" className="brand-logo-image" /> </NavLink>
+      
 
       </div>
 
@@ -65,7 +52,7 @@ function AdminSidebar({ sidebarOpen, setSidebarOpen }) {
             </li>
 
 
-            <li>
+            {/* <li>
               <NavLink
                 to="/admin/course"
                 className={({ isActive }) =>
@@ -125,12 +112,12 @@ function AdminSidebar({ sidebarOpen, setSidebarOpen }) {
                 </span>
 
               </NavLink>
-            </li>
+            </li> */}
 
 
             <li>
               <NavLink
-                to="/admin/allocate"
+                to="/test/allocate"
                 className={({ isActive }) =>
                   isActive ? "active" : ""
                 }
@@ -142,14 +129,33 @@ function AdminSidebar({ sidebarOpen, setSidebarOpen }) {
                 </span>
 
                 <span className="nav-text">
-                  Allocate
+                  Test Allocate
+                </span>
+
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/admin/results"
+                className={({ isActive }) =>
+                  isActive ? "active" : ""
+                }
+                onClick={() => setSidebarOpen(false)}
+              >
+
+                <span className="material-icons">
+                  event_available
+                </span>
+
+                <span className="nav-text">
+                  Test Result
                 </span>
 
               </NavLink>
             </li>
 
 
-            <li>
+            {/* <li>
               <NavLink
                 to="/login"
                 className={({ isActive }) =>
@@ -167,7 +173,7 @@ function AdminSidebar({ sidebarOpen, setSidebarOpen }) {
                 </span>
 
               </NavLink>
-            </li>
+            </li> */}
 
           </ul>
 
