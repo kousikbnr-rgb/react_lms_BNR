@@ -110,7 +110,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             </li>
 
 
-            {/* <li>
+            <li>
               <NavLink
                 to="/mcq"
                 className={({ isActive }) =>
@@ -128,7 +128,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 </span>
 
               </NavLink>
-            </li> */}
+            </li>
 
           </ul>
 

@@ -2,9 +2,13 @@
    BR ACADEMY - MCQ PAGE
    ========================================================= */
 
+/* =========================================================
+   MAIN MCQ PAGE
+   ========================================================= */
+
 .mcq-page {
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 /* =========================================================
@@ -12,226 +16,611 @@
    ========================================================= */
 
 .mcq-header {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .mcq-header h2 {
-    margin: 0 0 8px;
-    font-size: 28px;
-    font-weight: 700;
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .mcq-header p {
-    margin: 0;
-    color: #a098ae;
-    font-size: 15px;
+  margin: 0;
+  color: #a098ae;
+  font-size: 15px;
 }
-
 
 /* =========================================================
    QUIZ CARD
    ========================================================= */
 
 .mcq-card {
-    width: 100%;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px;
 
+  background: #ffffff;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  box-sizing: border-box;
+}
 
 /* =========================================================
    TOP ROW
    ========================================================= */
 
 .mcq-top-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
 }
 
 .mcq-top-row h5 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 600;
-}
+  margin: 0;
 
+  font-size: 18px;
+  font-weight: 600;
+}
 
 /* =========================================================
    TIMER
    ========================================================= */
 
 .mcq-timer {
-    display: inline-block;
-    padding: 7px 14px;
-    border-radius: 5px;
-    background: #dc3545;
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: 600;
-}
+  display: inline-block;
 
+  padding: 7px 14px;
+
+  border-radius: 5px;
+
+  background: #dc3545;
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 600;
+}
 
 /* =========================================================
    PROGRESS BAR
    ========================================================= */
 
 .mcq-progress {
-    width: 100%;
-    height: 12px;
-    margin-bottom: 30px;
-    overflow: hidden;
-    background: #e9ecef;
-    border-radius: 6px;
+  width: 100%;
+  height: 12px;
+
+  margin-bottom: 30px;
+
+  overflow: hidden;
+
+  background: #e9ecef;
+
+  border-radius: 6px;
 }
 
 .mcq-progress-bar {
-    height: 100%;
-    background: #4d44b5;
-    border-radius: 6px;
-    transition: width 0.3s ease;
-}
+  height: 100%;
 
+  background: #4d44b5;
+
+  border-radius: 6px;
+
+  transition: width 0.3s ease;
+}
 
 /* =========================================================
    QUESTION
    ========================================================= */
 
 .mcq-question {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .mcq-question h4 {
-    margin: 0;
-    font-size: 22px;
-    line-height: 1.5;
-    font-weight: 600;
-}
+  margin: 0;
 
+  font-size: 22px;
+  line-height: 1.5;
+
+  font-weight: 600;
+}
 
 /* =========================================================
    OPTIONS
    ========================================================= */
 
 .mcq-options {
-    width: 100%;
+  width: 100%;
 }
 
 .mcq-option {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 58px;
-    margin-bottom: 15px;
-    padding: 15px;
-    border: 1px solid #e3e3e3;
-    border-radius: 6px;
-    background: #ffffff;
-    cursor: pointer;
-    transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 58px;
+
+  margin-bottom: 15px;
+  padding: 15px;
+
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition: all 0.2s ease;
 }
 
 .mcq-option:hover {
-    border-color: #4d44b5;
-    background: #f8f7ff;
+  border-color: #4d44b5;
+  background: #f8f7ff;
 }
+
+/* =========================================================
+   RADIO BUTTON
+   ========================================================= */
 
 .mcq-option input {
-    width: 18px;
-    height: 18px;
-    margin: 0 10px 0 0;
-    cursor: pointer;
-    flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+
+  margin: 0 10px 0 0;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
 }
+
+/* =========================================================
+   OPTION TEXT
+   ========================================================= */
 
 .mcq-option label {
-    margin: 0;
-    color: #333333;
-    font-size: 15px;
-    line-height: 1.5;
-    cursor: pointer;
-}
+  margin: 0;
 
+  color: #333333;
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
 
 /* =========================================================
    SELECTED OPTION
    ========================================================= */
 
 .mcq-option-selected {
-    border-color: #4d44b5;
-    background: #f3f1ff;
-}
+  border-color: #4d44b5;
 
+  background: #f3f1ff;
+}
 
 /* =========================================================
    NAVIGATION
    ========================================================= */
 
 .mcq-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 40px;
 }
 
 .mcq-navigation button {
-    min-width: 125px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
+  min-width: 125px;
+
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
 }
 
+/* =========================================================
+   PREVIOUS BUTTON
+   ========================================================= */
+
 .mcq-prev-btn {
-    background: #6c757d;
-    color: #ffffff;
+  background: #6c757d;
+  color: #ffffff;
 }
 
 .mcq-prev-btn:hover:not(:disabled) {
-    background: #5c636a;
+  background: #5c636a;
 }
 
 .mcq-prev-btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
+  opacity: 0.6;
+
+  cursor: not-allowed;
 }
 
+/* =========================================================
+   NEXT BUTTON
+   ========================================================= */
+
 .mcq-next-btn {
-    background: #4d44b5;
-    color: #ffffff;
+  background: #4d44b5;
+  color: #ffffff;
 }
 
 .mcq-next-btn:hover {
-    background: #40389d;
+  background: #40389d;
 }
 
+/* =========================================================
+   ANSWER STATUS
+   ========================================================= */
+
+.mcq-answer-status {
+  margin-top: 20px;
+
+  text-align: center;
+
+  color: #777777;
+
+  font-size: 14px;
+}
 
 /* =========================================================
-   SUBMIT
+   SUBMIT SECTION
    ========================================================= */
 
 .mcq-submit {
-    margin-top: 25px;
-    text-align: center;
+  margin-top: 25px;
+
+  text-align: center;
 }
 
 .mcq-submit-btn {
-    padding: 10px 35px;
-    border: none;
-    border-radius: 5px;
-    background: #198754;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
+  padding: 10px 35px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #198754;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
 }
 
 .mcq-submit-btn:hover {
-    background: #157347;
+  background: #157347;
+}
+
+/* =========================================================
+   QUIZ RESULT SCREEN
+   ========================================================= */
+
+.mcq-result-card {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto;
+  padding: 40px 30px;
+
+  background: #ffffff;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   RESULT ICON
+   ========================================================= */
+
+.mcq-result-icon {
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #4d44b5;
+  color: #ffffff;
+
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   RESULT COURSE
+   ========================================================= */
+
+.mcq-result-course {
+  margin: 0 0 10px;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   SCORE
+   ========================================================= */
+
+.mcq-score {
+  margin: 25px 0;
+}
+
+.mcq-score-number {
+  display: block;
+
+  font-size: 52px;
+  font-weight: 700;
+
+  color: #4d44b5;
+
+  line-height: 1.2;
+}
+
+.mcq-score-label {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #777777;
+
+  font-size: 15px;
+}
+
+/* =========================================================
+   RESULT MESSAGE
+   ========================================================= */
+
+.mcq-result-message {
+  margin: 20px auto;
+
+  max-width: 600px;
+
+  color: #666666;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   RESULT ACTIONS
+   ========================================================= */
+
+.mcq-result-actions {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+/* =========================================================
+   RETAKE BUTTON
+   ========================================================= */
+
+.mcq-retake-btn {
+  padding: 10px 30px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #4d44b5;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.mcq-retake-btn:hover {
+  background: #40389d;
+}
+
+/* =========================================================
+   RESULT PASS / FAIL COLORS
+   ========================================================= */
+
+.mcq-result-card .mcq-result-icon {
+  background: #4d44b5;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .mcq-header {
+    margin-bottom: 20px;
+  }
+
+  .mcq-header h2 {
+    font-size: 24px;
+  }
+
+  .mcq-header p {
+    font-size: 14px;
+  }
+
+  .mcq-card,
+  .mcq-result-card {
+    padding: 25px 20px;
+  }
+
+  .mcq-question h4 {
+    font-size: 19px;
+  }
+
+  .mcq-top-row h5 {
+    font-size: 16px;
+  }
+
+  .mcq-result-course {
+    font-size: 21px;
+  }
+
+  .mcq-score-number {
+    font-size: 44px;
+  }
+
+  .mcq-result-actions {
+    flex-direction: column;
+  }
+
+  .mcq-retake-btn {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .mcq-page {
+    padding: 0;
+  }
+
+  .mcq-header {
+    margin-bottom: 18px;
+  }
+
+  .mcq-header h2 {
+    font-size: 21px;
+  }
+
+  .mcq-header p {
+    font-size: 13px;
+  }
+
+  .mcq-card,
+  .mcq-result-card {
+    padding: 20px 15px;
+  }
+
+  .mcq-top-row {
+    margin-bottom: 15px;
+  }
+
+  .mcq-top-row h5 {
+    font-size: 15px;
+  }
+
+  .mcq-timer {
+    padding: 6px 10px;
+
+    font-size: 14px;
+  }
+
+  .mcq-progress {
+    height: 9px;
+
+    margin-bottom: 22px;
+  }
+
+  .mcq-question {
+    margin-bottom: 20px;
+  }
+
+  .mcq-question h4 {
+    font-size: 17px;
+
+    line-height: 1.5;
+  }
+
+  .mcq-option {
+    min-height: 50px;
+
+    margin-bottom: 10px;
+
+    padding: 12px;
+  }
+
+  .mcq-option input {
+    width: 16px;
+    height: 16px;
+
+    margin-right: 8px;
+  }
+
+  .mcq-option label {
+    font-size: 14px;
+  }
+
+  .mcq-navigation {
+    margin-top: 30px;
+  }
+
+  .mcq-navigation button {
+    min-width: 105px;
+
+    padding: 9px 12px;
+
+    font-size: 14px;
+  }
+
+  .mcq-answer-status {
+    font-size: 13px;
+  }
+
+  .mcq-result-icon {
+    width: 65px;
+    height: 65px;
+
+    font-size: 28px;
+  }
+
+  .mcq-result-card h2 {
+    font-size: 22px;
+  }
+
+  .mcq-result-course {
+    font-size: 19px;
+  }
+
+  .mcq-score-number {
+    font-size: 40px;
+  }
+
+  .mcq-score-label {
+    font-size: 14px;
+  }
+
+  .mcq-result-message {
+    font-size: 14px;
+  }
 }

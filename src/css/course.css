@@ -91,14 +91,15 @@
 
 .course-card-image {
     width: 100%;
-    height: 240px;
+    height: 220px;
 
     display: block;
 
-   object-fit: contain;
+    object-fit: cover;
     object-position: center;
 
-    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -219,6 +220,42 @@
     border-color: #4338a5;
 
     color: #ffffff;
+}
+
+/* ============================= */
+/* MERN STACK BANNER */
+/* ============================= */
+
+
+.mern-banner {
+  width: 100%;
+  min-height: 180px;
+  margin-bottom: 30px;
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: 100% 250%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.mern-banner-content {
+  width: 100%;
+}
+
+.course-learning-text {
+  margin: 10px 10px 25px;
+  
+  font-size: 16px;
 }
 
 

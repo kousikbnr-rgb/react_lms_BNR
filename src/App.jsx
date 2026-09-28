@@ -21,24 +21,33 @@ import StudentReport from "./pages/trainer/StudentReport";
 import Students from "./pages/trainer/Students";
 import Batches from "./pages/trainer/Batches";
 import TrainerProfile from "./pages/trainer/TrainerProfile";
+<<<<<<< Updated upstream
 import TestAllocate from "./pages/admin/TestAllocate";
 import TestResultreport from "./pages/admin/ResultReport";
 
 
+=======
+import CourseContent from "./pages/CourseContent";
+>>>>>>> Stashed changes
 
 function App() {
+  //  return (
+  // <div>
+  //   <UserForm />
 
+  //   <hr />
 
-  
-//  return (
-    // <div>
-    //   <UserForm />
+  //   <UserDetails />
+  // </div>
 
+<<<<<<< Updated upstream
     //   <hr />
 
     //   <UserDetails />
     // </div>
  
+=======
+>>>>>>> Stashed changes
   return (
     <BrowserRouter>
       <Routes>
@@ -69,6 +78,12 @@ function App() {
         <Route path="/technicalTest" element={<Tech />} />
         <Route path="/test/allocate" element={<TestAllocate />} />
 
+<<<<<<< Updated upstream
+=======
+        <Route path="/course/:course/:topic" element={<CourseContent />} />
+
+        <Route path="/mcq/:course" element={<MCQ />} />
+>>>>>>> Stashed changes
 
         {/*admin routes */}
 
@@ -151,7 +166,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
-
 
 export default App;
